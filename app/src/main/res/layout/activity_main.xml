@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.i.relativelayout.MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+       <TextView
+           android:layout_width="60dp"
+           android:layout_height="60dp"
+           android:background="#FF0000"
+           android:text="RED"
+           android:textSize="20dp"
+           android:gravity="center"
+           android:id="@+id/red"/>
+       <TextView
+           android:id="@+id/yellow"
+           android:layout_width="100dp"
+           android:layout_height="60dp"
+           android:background="#FFFF00"
+           android:text="yellow"
+           android:textSize="20dp"
+           android:gravity="center"
+           android:layout_centerHorizontal="true" />
+       <TextView
+           android:layout_width="100dp"
+           android:layout_height="60dp"
+           android:background="#FFA500"
+           android:text="ORANGE"
+           android:textSize="20dp"
+           android:gravity="center"
+           android:layout_alignParentRight="true"/>
+       <TextView
+           android:id="@+id/blue"
+           android:layout_width="60dp"
+           android:layout_height="60dp"
+           android:background="#912CEE"
+           android:text="BLUE"
+           android:gravity="center"
+           android:textSize="20dp"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@+id/yellow"
+           android:layout_marginTop="40px"/>
+       <TextView
+           android:layout_width="70dp"
+           android:layout_height="60dp"
+           android:text="GREEN"
+           android:background="#ADFF2F"
+           android:textSize="20dp"
+           android:gravity="center"
+           android:layout_alignTop="@+id/blue"
+           android:layout_toLeftOf="@+id/blue"
+           android:layout_marginRight="20dp"/>
+       <TextView
+           android:layout_width="70dp"
+           android:layout_height="60dp"
+           android:text="INDIGO"
+           android:background="#BA55D3"
+           android:textSize="20dp"
+           android:gravity="center"
+           android:layout_alignTop="@+id/blue"
+           android:layout_toRightOf="@+id/blue"
+           android:layout_marginLeft="20dp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:text="VIOLET"
+           android:textSize="20dp"
+           android:background="#ff83fa"
+           android:gravity="center"
+           android:layout_below="@+id/blue"
+           android:layout_marginTop="20dp"/>
+
+   </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
